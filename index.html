@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeadZelle — Automated Lead Capture & Booking | 24/7</title>
+  <meta name="description" content="LeadZelle installs a done-for-you chatbot that captures leads, qualifies them in 60 seconds, and books calls automatically — 24/7. Setup in 48 hours.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="services.html">Services</a>
+  <a href="industries.html">Industries</a>
+  <a href="demo.html">Demo</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo">
+    <svg class="logo-mark" viewBox="0 0 36 36" fill="none">
+      <rect width="36" height="36" rx="8" fill="rgba(209,70,42,0.1)"/>
+      <path d="M8 10h8v2H10v14h14v-6h2v8H8V10z" fill="#d1462a"/>
+      <path d="M16 10h12v2l-9.5 12H28v2H16v-2l9.5-12H16V10z" fill="#b974f4"/>
+    </svg>
+    <div class="logo-wordmark">
+      <span>Lead</span><span>Zelle</span>
+    </div>
+  </a>
+
+  <ul class="navbar-links">
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="demo.html">Demo</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <a href="https://cal.com/vigneshoo7/leadzelle" target="_blank" class="btn btn-primary">
+    Book a Demo
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section style="position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; padding-top:80px;">
+  <div class="hero-bg"></div>
+  <div class="hero-bg-accent"></div>
+  <div class="particles"></div>
+
+  <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; width:100%; position:relative; z-index:1;">
+    <div>
+      <div class="section-label label-accent hero-animate">
+        <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="#d1462a"/></svg>
+        DONE FOR YOU · LIVE IN 48 HOURS
+      </div>
+
+      <h1 class="display text-hero hero-animate" style="margin-bottom:24px;">
+        What is your website
+        <span style="background:linear-gradient(135deg, #d1462a, #b974f4); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; display:block;">
+          doing at 2am?
+        </span>
+      </h1>
+
+      <p class="text-body hero-animate" style="color:var(--cream-muted); max-width:520px; margin-bottom:40px; line-height:1.7;">
+        LeadZelle installs a done-for-you chatbot that captures every visitor, qualifies them in 60 seconds, and books consultations straight into your calendar — automatically. Every night.
+      </p>
+
+      <div class="flex gap-16 hero-animate" style="flex-wrap:wrap; margin-bottom:56px;">
+        <a href="https://www.tella.tv/video/i-built-a-system-that-captures-leads-while-i-sleep-heres-how-hmoq" target="_blank" class="btn btn-primary btn-shimmer">
+          Watch 2-Min Demo
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><polygon points="5,3 13,8 5,13" fill="currentColor"/></svg>
+        </a>
+        <a href="pricing.html" class="btn btn-outline">
+          See Pricing
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="stats-row hero-animate">
+        <div class="stat-item">
+          <span class="stat-number">48hr</span>
+          <span class="stat-label">Setup time</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Always capturing</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">$0</span>
+          <span class="stat-label">Tech skills needed</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center hero-animate">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="chat-header">
+            <div class="chat-avatar">LZ</div>
+            <div>
+              <div class="chat-name">LeadZelle Assistant</div>
+              <div class="chat-status">● Online now</div>
+            </div>
+          </div>
+          <div class="chat-messages">
+            <div class="message message-bot">👋 Hi! I'm here to help. Are you looking to buy, sell, or just exploring?</div>
+            <div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>
+            <div class="message message-user">Looking to buy in Austin</div>
+            <div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>
+            <div class="message message-bot">Great! What's your budget range? This helps me match you with the right listings.</div>
+            <div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>
+            <div class="message message-user">Around $450k–$550k</div>
+            <div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>
+            <div class="message message-bot">Perfect. What's the best number to reach you? I'll have someone connect with you today. 📲</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <div class="ticker-item">Real Estate</div>
+    <div class="ticker-item">Immigration Law</div>
+    <div class="ticker-item">Mortgage Brokers</div>
+    <div class="ticker-item">Personal Injury</div>
+    <div class="ticker-item">Insurance Agents</div>
+    <div class="ticker-item">Solar Companies</div>
+    <div class="ticker-item">Legal Services</div>
+    <div class="ticker-item">Accountants</div>
+    <div class="ticker-item">Financial Advisors</div>
+    <div class="ticker-item">Real Estate</div>
+    <div class="ticker-item">Immigration Law</div>
+    <div class="ticker-item">Mortgage Brokers</div>
+    <div class="ticker-item">Personal Injury</div>
+    <div class="ticker-item">Insurance Agents</div>
+    <div class="ticker-item">Solar Companies</div>
+    <div class="ticker-item">Legal Services</div>
+    <div class="ticker-item">Accountants</div>
+    <div class="ticker-item">Financial Advisors</div>
+  </div>
+</div>
+
+<section class="section container gsap-stagger">
+  <div class="text-center mb-64 gsap-heading">
+    <h2 class="heading text-h2 mb-16">Your website is leaking money.</h2>
+    <p class="text-body text-muted" style="max-width:600px; margin:0 auto;">Most visitors leave without contacting you. Here's why your current setup is failing.</p>
+  </div>
+
+  <div class="grid-4">
+    <div class="card reveal delay-1">
+      <div class="icon-wrap glow-accent mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 18h8v-6" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Closed After Hours</h3>
+      <p class="text-body text-muted">Visitors look for help at 9pm and on weekends. If you're not there to answer, they go to a competitor.</p>
+    </div>
+
+    <div class="card reveal delay-2">
+      <div class="icon-wrap glow-lavender mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="8" y="2" width="8" height="4" rx="1" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 14l2 2 4-4" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Forms Are Dead</h3>
+      <p class="text-body text-muted">Nobody wants to fill out a static "Contact Us" form and wait 24 hours for an email reply.</p>
+    </div>
+
+    <div class="card reveal delay-3">
+      <div class="icon-wrap glow-accent mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="16" y1="2" x2="16" y2="6" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="8" y1="2" x2="8" y2="6" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="3" y1="10" x2="21" y2="10" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="12" cy="15" r="1" fill="#d1462a"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Booking Friction</h3>
+      <p class="text-body text-muted">Back-and-forth emails to find a meeting time kills momentum and causes leads to ghost you.</p>
+    </div>
+
+    <div class="card reveal delay-4">
+      <div class="icon-wrap glow-lavender mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="18" y1="2" x2="22" y2="6" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="22" y1="2" x2="18" y2="6" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Slow Response</h3>
+      <p class="text-body text-muted">If you don't respond to a lead within 5 minutes, your chances of closing them drop by 80%.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container gsap-stagger" style="position:relative;">
+  <div class="text-center mb-64 gsap-heading">
+    <div class="section-label label-lavender">How It Works</div>
+    <h2 class="heading text-h2 mb-16">The system that never sleeps.</h2>
+  </div>
+
+  <div style="position:relative; margin-bottom:48px;">
+    <svg class="step-connector-line svg-path-animated" style="position:absolute; top:32px; left:10%; right:10%; width:80%; height:8px;" preserveAspectRatio="none">
+      <line x1="0" y1="4" x2="100%" y2="4" stroke="rgba(209,70,42,0.3)" stroke-width="2" stroke-dasharray="8 6"/>
+    </svg>
+
+    <div class="grid-4" style="position:relative; z-index:2; gap:40px;">
+      <div class="timeline-step" style="flex-direction:column; align-items:center; text-align:center;">
+        <div class="timeline-number">1</div>
+        <h3 class="heading text-h3 mt-16 mb-8">Visitor Arrives</h3>
+        <p class="text-body text-muted">LeadZelle greets them instantly with a personalized message.</p>
+      </div>
+      <div class="timeline-step" style="flex-direction:column; align-items:center; text-align:center;">
+        <div class="timeline-number">2</div>
+        <h3 class="heading text-h3 mt-16 mb-8">Bot Qualifies</h3>
+        <p class="text-body text-muted">Collects info, verifies they are a fit, and asks the right questions.</p>
+      </div>
+      <div class="timeline-step" style="flex-direction:column; align-items:center; text-align:center;">
+        <div class="timeline-number">3</div>
+        <h3 class="heading text-h3 mt-16 mb-8">Call Booked</h3>
+        <p class="text-body text-muted">Shows available times and books them directly into your calendar.</p>
+      </div>
+      <div class="timeline-step" style="flex-direction:column; align-items:center; text-align:center;">
+        <div class="timeline-number">4</div>
+        <h3 class="heading text-h3 mt-16 mb-8">You Get Notified</h3>
+        <p class="text-body text-muted">Instant ping on your phone with the new lead's complete profile.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center reveal">
+    <a href="how-it-works.html" class="btn btn-outline" style="padding:12px 24px;">See full breakdown →</a>
+  </div>
+</section>
+
+<section class="section container gsap-stagger">
+  <div class="text-center mb-64 gsap-heading">
+    <div class="section-label label-accent">Built For You</div>
+    <h2 class="heading text-h2 mb-16">Customized for your industry.</h2>
+  </div>
+
+  <div class="grid-3">
+    <div class="industry-card reveal delay-1">
+      <div class="icon-wrap glow-accent mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#d1462a" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 8v4" stroke="#d1462a" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="16" r="1" fill="#d1462a"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Immigration Law</h3>
+      <p class="text-body text-muted">Capture anxious clients 24/7. Pre-qualify visa types before the consultation.</p>
+    </div>
+
+    <div class="industry-card reveal delay-2">
+      <div class="icon-wrap glow-lavender mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M3 21h18M5 21V5l7-3 7 3v16M9 21v-4h6v4" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Mortgage Brokers</h3>
+      <p class="text-body text-muted">Be the first to respond. Qualify loan types and property values instantly.</p>
+    </div>
+
+    <div class="industry-card reveal delay-3">
+      <div class="icon-wrap glow-accent mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="7" width="20" height="14" rx="2" stroke="#d1462a" stroke-width="2"/>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke="#d1462a" stroke-width="2"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Personal Injury</h3>
+      <p class="text-body text-muted">Accident victims search at midnight. Collect incident details immediately.</p>
+    </div>
+
+    <div class="industry-card reveal delay-1">
+      <div class="icon-wrap glow-lavender mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M3 9l9-7 9 7" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 22V12h6v10" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Real Estate</h3>
+      <p class="text-body text-muted">Engage buyers browsing listings on weekends. Book viewings automatically.</p>
+    </div>
+
+    <div class="industry-card reveal delay-2">
+      <div class="icon-wrap glow-accent mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">Financial Advisors</h3>
+      <p class="text-body text-muted">Build trust from the first interaction. Schedule wealth strategy sessions 24/7.</p>
+    </div>
+
+    <div class="industry-card reveal delay-3">
+      <div class="icon-wrap glow-lavender mb-24">
+        <svg viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="#d1462a" stroke-width="2"/>
+          <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="heading text-h3 mb-12">And Many More</h3>
+      <p class="text-body text-muted">If your business relies on booking appointments from web traffic, we can help.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container gsap-stagger">
+  <div class="text-center mb-64 gsap-heading">
+    <div class="section-label label-lavender">Pricing</div>
+    <h2 class="heading text-h2 mb-16">Stop paying thousands for receptionists.</h2>
+  </div>
+
+  <div class="value-anchor-row reveal">
+    <div class="value-anchor-item">
+      <div class="value-anchor-label">Human Receptionist</div>
+      <div class="value-anchor-price strike">$3,500/mo</div>
+    </div>
+    <div class="value-anchor-item">
+      <div class="value-anchor-label">LeadZelle Automation</div>
+      <div class="value-anchor-price highlight">$69/mo</div>
+    </div>
+  </div>
+
+  <div class="grid-2" style="max-width:1000px; margin:0 auto;">
+    <div class="pricing-card reveal delay-1">
+      <h3 class="heading text-h3">Standard Plan</h3>
+      
+      <div class="price-anchor">
+        <div class="price-main">$99</div>
+        <div class="price-period">/month</div>
+      </div>
+      <div class="price-setup">Plus $249 one-time setup fee</div>
+      
+      <div class="divider"></div>
+      
+      <ul class="feature-list">
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Custom chatbot build
+        </li>
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Website installation
+        </li>
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Cal.com integration
+        </li>
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Email & Telegram notifications
+        </li>
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Unlimited leads
+        </li>
+      </ul>
+
+      <a href="https://cal.com/vigneshoo7/leadzelle" class="btn btn-outline" style="width:100%; justify-content:center;">Book Standard Setup</a>
+    </div>
+
+    <div class="pricing-card pricing-card-featured reveal delay-2">
+      <div class="best-value-ribbon">BEST VALUE</div>
+      <h3 class="heading text-h3">Founding Member</h3>
+      
+      <div class="price-anchor">
+        <div class="price-strike">~~$99/m~~</div>
+        <div class="price-main">$69</div>
+        <div class="price-period">/month</div>
+      </div>
+      <div class="price-setup">Plus <span style="text-decoration:line-through;">$249</span> <strong class="text-accent">$199</strong> setup fee</div>
+      
+      <div class="spots-row">
+        <div class="spot taken"></div>
+        <div class="spot available"></div>
+        <div class="spot available"></div>
+      </div>
+      <p class="text-xs text-muted mb-24">⚡ Only 2 spots left at this price</p>
+      
+      <div class="divider"></div>
+      
+      <ul class="feature-list">
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <strong>Everything in Standard, plus:</strong>
+        </li>
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-lavender">Monthly performance optimization</span>
+        </li>
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-lavender">Custom CRM integration setup</span>
+        </li>
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-lavender">Priority support</span>
+        </li>
+        <li class="feature-item">
+          <svg class="feature-check" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#d1462a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-accent">🔒 Price locked in forever</span>
+        </li>
+      </ul>
+
+      <a href="https://cal.com/vigneshoo7/leadzelle" class="btn btn-primary btn-shimmer" style="width:100%; justify-content:center;">Claim Your Founding Spot →</a>
+    </div>
+  </div>
+
+  <div class="guarantee-strip reveal" style="max-width:1000px; margin:48px auto 0;">
+    <svg class="shield-svg" width="48" height="48" viewBox="0 0 120 120" style="flex-shrink:0;">
+      <path class="shield-outline" d="M60 10 L100 28 L100 60 C100 80 82 96 60 106 C38 96 20 80 20 60 L20 28 Z" stroke="#d1462a" stroke-width="4" fill="none"/>
+      <path class="shield-check" d="M42 60 L54 72 L78 48" stroke="#d1462a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+    <div>
+      <h3 class="heading" style="font-size:16px; margin-bottom:4px;">30-Day Setup Guarantee</h3>
+      <p class="text-body text-muted" style="font-size:14px;">If we don't capture your first lead within 30 days of going live, we'll refund your setup fee in full.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container text-center gsap-heading" style="padding:160px 40px;">
+  <div style="position:absolute; inset:0; z-index:-1; opacity:0.6;">
+    <div class="hero-bg-accent" style="top:50%; left:50%; transform:translate(-50%, -50%);"></div>
+  </div>
+  <h2 class="display" style="font-size:clamp(48px, 6vw, 72px); margin-bottom:32px;">Ready to automate your lead flow?</h2>
+  <div class="flex justify-center gap-16" style="flex-wrap:wrap;">
+    <a href="https://cal.com/vigneshoo7/leadzelle" class="btn btn-primary btn-shimmer">Book Your Setup Call</a>
+    <a href="demo.html" class="btn btn-outline">Test the Demo First</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo">
+          <svg class="logo-mark" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="8" fill="rgba(209,70,42,0.1)"/>
+            <path d="M8 10h8v2H10v14h14v-6h2v8H8V10z" fill="#d1462a"/>
+            <path d="M16 10h12v2l-9.5 12H28v2H16v-2l9.5-12H16V10z" fill="#b974f4"/>
+          </svg>
+          <div class="logo-wordmark"><span>Lead</span><span>Zelle</span></div>
+        </a>
+        <p>Done-for-you lead capture and call booking automation for service businesses. More leads. Less work. 24/7.</p>
+      </div>
+
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="demo.html">Demo</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:vignesh@leadzelle.com">vignesh@leadzelle.com</a></li>
+          <li><a href="https://cal.com/vigneshoo7/leadzelle" target="_blank">Book a Demo Call</a></li>
+          <li><a href="https://instagram.com/leadzelle" target="_blank">@leadzelle on Instagram</a></li>
+          <li><a href="https://leadzelle.com" target="_blank">leadzelle.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 LeadZelle. All rights reserved.</p>
+      <p>Built for businesses that never sleep.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- LeadZelle Custom Chat Bubble -->
+<div class="lz-bubble-wrap" id="lzBubble">
+
+  <!-- Tooltip -->
+  <div class="lz-tooltip" id="lzTooltip" style="position:relative;">
+    <button class="lz-tooltip-close" id="lzTooltipClose">×</button>
+    <p>What is your website doing at 2am? 👀</p>
+  </div>
+
+  <!-- Menu (hidden by default) -->
+  <div class="lz-menu lz-hidden" id="lzMenu">
+    <div class="lz-menu-header"><p>How can we help?</p></div>
+    <a href="https://www.tella.tv/video/i-built-a-system-that-captures-leads-while-i-sleep-heres-how-hmoq" target="_blank" class="lz-menu-item">
+      <div class="lz-menu-icon">🎬</div>
+      <div class="lz-menu-text">
+        <span class="lz-menu-title">Watch 2-Min Demo</span>
+        <span class="lz-menu-subtitle">See the system in action</span>
+      </div>
+    </a>
+    <a href="https://cal.com/vigneshoo7/leadzelle" target="_blank" class="lz-menu-item">
+      <div class="lz-menu-icon">📅</div>
+      <div class="lz-menu-text">
+        <span class="lz-menu-title">Book a Free Call</span>
+        <span class="lz-menu-subtitle">Setup in 48 hours</span>
+      </div>
+    </a>
+    <a href="pricing.html" class="lz-menu-item">
+      <div class="lz-menu-icon">💰</div>
+      <div class="lz-menu-text">
+        <span class="lz-menu-title">View Pricing</span>
+        <span class="lz-menu-subtitle">From $69/month</span>
+      </div>
+    </a>
+    <a href="demo.html" class="lz-menu-item">
+      <div class="lz-menu-icon">🤖</div>
+      <div class="lz-menu-text">
+        <span class="lz-menu-title">Try Live Demo</span>
+        <span class="lz-menu-subtitle">Experience it yourself</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Main bubble button -->
+  <button class="lz-bubble-btn" id="lzBtn" aria-label="Open menu">
+    <div class="lz-pulse-ring"></div>
+    <!-- Chat icon -->
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="#f0ebe8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <!-- Close icon -->
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="#f0ebe8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+
+</div>
+
+<script>
+(function() {
+  const btn = document.getElementById('lzBtn');
+  const menu = document.getElementById('lzMenu');
+  const tooltip = document.getElementById('lzTooltip');
+  const tooltipClose = document.getElementById('lzTooltipClose');
+
+  let menuOpen = false;
+  let tooltipDismissed = false;
+
+  // Show tooltip after 3 seconds
+  setTimeout(function() {
+    if (!tooltipDismissed && tooltip) {
+      tooltip.style.display = 'block';
+    }
+  }, 3000);
+
+  // Hide tooltip initially
+  if (tooltip) tooltip.style.display = 'none';
+
+  // Close tooltip
+  if (tooltipClose) {
+    tooltipClose.addEventListener('click', function(e) {
+      e.stopPropagation();
+      tooltip.style.display = 'none';
+      tooltipDismissed = true;
+    });
+  }
+
+  // Toggle menu on button click
+  if (btn) {
+    btn.addEventListener('click', function() {
+      menuOpen = !menuOpen;
+      btn.classList.toggle('open', menuOpen);
+      if (menuOpen) {
+        menu.classList.remove('lz-hidden');
+        if (tooltip) tooltip.style.display = 'none';
+        tooltipDismissed = true;
+      } else {
+        menu.classList.add('lz-hidden');
+      }
+    });
+  }
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const bubble = document.getElementById('lzBubble');
+    if (bubble && !bubble.contains(e.target) && menuOpen) {
+      menuOpen = false;
+      btn.classList.remove('open');
+      menu.classList.add('lz-hidden');
+    }
+  });
+})();
+</script>
+
+<script src="animations.js"></script>
+</body>
+</html>
